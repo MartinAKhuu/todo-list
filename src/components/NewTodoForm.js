@@ -8,7 +8,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
     return (
         <div class="todo-form">
             <div className="row no-gutters">
-                <div class="col-9">
+                <div class="col-10">
                     <input
                         id="todo-input"
                         type="text"
@@ -16,18 +16,19 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
                         value={inputValue}
                         onChange={e => setInputValue(e.target.value)} />
                 </div>
-                <div className="col-3">
-                    <button onClick={() => {
-                        const isDuplicateText =
-                            todos.some(todo => todo.text === inputValue);
+                <div className="col-2">
+                    <button id="todo-submit"
+                        onClick={() => {
+                            const isDuplicateText =
+                                todos.some(todo => todo.text === inputValue);
 
-                        if (!isDuplicateText && inputValue.length !== 0) {
-                            onCreatePressed(inputValue);
-                            setInputValue('');
-                        } else {
-                            alert('Please enter a unique and non-empty to do.');
-                        }
-                    }}>Create Todo</button>
+                            if (!isDuplicateText && inputValue.length !== 0) {
+                                onCreatePressed(inputValue);
+                                setInputValue('');
+                            } else {
+                                alert('Please enter a unique and non-empty to do.');
+                            }
+                        }}>Create Todo</button>
                 </div>
             </div>
         </div>
