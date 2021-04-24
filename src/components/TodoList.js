@@ -8,7 +8,8 @@ const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed }) => (
     <>
         <NewTodoForm />
         <div className="todo-list">
-            {todos.map((todo) => <TodoListItem
+            {todos.map((todo, i) => <TodoListItem
+                key={i}
                 todo={todo}
                 onRemovePressed={onRemovePressed}
                 onCompletedPressed={onCompletedPressed}></TodoListItem>)}

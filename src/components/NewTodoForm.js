@@ -6,9 +6,9 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
     const [inputValue, setInputValue] = useState('');
 
     return (
-        <div class="todo-form">
+        <div className="todo-form">
             <div className="row no-gutters">
-                <div class="col-10">
+                <div className="col-10">
                     <input
                         id="todo-input"
                         type="text"

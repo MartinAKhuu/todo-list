@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
-    <div class="row todo-item">
+    <div className="row todo-item">
         <div className="col-10">
             {todo.isCompleted === false
                 ?
@@ -13,14 +13,14 @@ const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
             {todo.isCompleted === false
                 ?
                 <button onClick={() => { onCompletedPressed(todo.text) }} className="todo-item-check">
-                    <i class="far fa-check-square"></i>
+                    <i className="far fa-check-square"></i>
                 </button>
                 :
                 <button disabled className="todo-item-check">
-                    <i class="fas fa-check-square"></i>
+                    <i className="fas fa-check-square"></i>
                 </button>}
             <button onClick={() => { onRemovePressed(todo.text); }} className="todo-item-delete">
-                <i class="fas fa-trash-alt"></i>
+                <i className="fas fa-trash-alt"></i>
             </button>
         </div>
     </div>
