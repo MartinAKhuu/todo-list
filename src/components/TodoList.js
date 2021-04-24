@@ -6,6 +6,7 @@ import { removeTodo, markCompleted } from '../redux/actions';
 
 const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed }) => (
     <>
+        <div className="lines" />
         <NewTodoForm />
         <div className="todo-list">
             {todos.map((todo, i) => <TodoListItem

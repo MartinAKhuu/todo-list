@@ -1,0 +1,39 @@
+.todo-item {
+    padding: 1rem 0;
+    padding-left: 4rem;
+    border-bottom: 1px dotted grey;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+
+    .completed {
+        text-decoration: line-through;
+    }
+
+    .todo-item-check {
+        width: 100%;
+        height: 100%;
+        color: #000;
+        background-color: #FFF;
+        border: none;
+
+        &:hover,
+        &:focus {
+            border: 1px solid #000;
+        }
+    }
+
+    .todo-item-delete {
+        width: 100%;
+        height: 100%;
+        color: #000;
+        background-color: #FFF;
+        border: none;
+
+        &:hover,
+        &:focus {
+            border: 1px solid #000;
+        }
+    }
+}

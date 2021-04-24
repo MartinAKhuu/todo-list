@@ -1,43 +1,48 @@
-#todo-input {
-  height: 100%;
-  width: 100%;
-}
-
-#todo-submit {
-  height: 100%;
-  width: 100%;
-}
-
 .todo-item {
   padding: 1rem 0;
-}
+  padding-left: 4rem;
+  border-bottom: 1px dotted grey; }
+  .todo-item:last-of-type {
+    border-bottom: none; }
+  .todo-item .completed {
+    text-decoration: line-through; }
+  .todo-item .todo-item-check {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background-color: #FFF;
+    border: none; }
+    .todo-item .todo-item-check:hover, .todo-item .todo-item-check:focus {
+      border: 1px solid #000; }
+  .todo-item .todo-item-delete {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background-color: #FFF;
+    border: none; }
+    .todo-item .todo-item-delete:hover, .todo-item .todo-item-delete:focus {
+      border: 1px solid #000; }
 
-.todo-item .completed {
-  text-decoration: line-through;
-}
+.todo-form {
+  padding: 1rem 0;
+  padding-left: 4rem;
+  border-bottom: 1px dotted grey; }
+  .todo-form #todo-input {
+    height: 100%;
+    width: 100%;
+    border: none; }
+  .todo-form #todo-submit {
+    height: 100%;
+    width: 100%; }
 
-.todo-item-check {
-  width: 100%;
-  height: 100%;
-  color: #000;
-  background-color: #FFF;
-  border: none;
-}
+#todo-root {
+  border: 1px dotted grey; }
 
-.todo-item-check:hover,
-.todo-item-check:focus {
-  border: 1px solid #000;
-}
-
-.todo-item-delete {
-  width: 100%;
-  height: 100%;
-  color: #000;
-  background-color: #FFF;
-  border: none;
-}
-
-.todo-item-delete:hover,
-.todo-item-delete:focus {
-  border: 1px solid #000;
-}
+.lines {
+  position: absolute;
+  float: left;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  width: 5px;
+  height: 495px;
+  margin-left: 2.5em; }
