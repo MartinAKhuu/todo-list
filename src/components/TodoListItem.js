@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
-    <div className="row todo-item">
+    <div className="row no-gutters todo-item">
         <div className="col-10">
             {todo.isCompleted === false
                 ?

@@ -1,6 +1,4 @@
 .todo-item {
-    padding: 1rem 0;
-    padding-left: 4rem;
     border-bottom: 1px dotted grey;
 
     &:last-of-type {
@@ -9,6 +7,12 @@
 
     .completed {
         text-decoration: line-through;
+    }
+
+    h3 {
+        padding: 1rem 0;
+        padding-left: 4rem;
+        margin: 0;
     }
 
     .todo-item-check {

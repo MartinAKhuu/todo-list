@@ -11,6 +11,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
                 <div className="col-10">
                     <input
                         id="todo-input"
+                        className="h3"
                         type="text"
                         placeholder="Type your new to-do item"
                         value={inputValue}
