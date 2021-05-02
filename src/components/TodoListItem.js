@@ -13,14 +13,14 @@ const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
             {todo.isCompleted === false
                 ?
                 <button onClick={() => { onCompletedPressed(todo.text) }} className="todo-item-check">
-                    <i className="far fa-check-square"></i>
+                    <i className="far fa-check-square" title="Click to complete todo"></i>
                 </button>
                 :
                 <button disabled className="todo-item-check">
-                    <i className="fas fa-check-square"></i>
+                    <i className="fas fa-check-square" title="Completed todo"></i>
                 </button>}
             <button onClick={() => { onRemovePressed(todo.text); }} className="todo-item-delete">
-                <i className="fas fa-trash-alt"></i>
+                <i className="fas fa-trash-alt" title="Delete this todo"></i>
             </button>
         </div>
     </div>

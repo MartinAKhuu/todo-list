@@ -29,7 +29,9 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
                             } else {
                                 alert('Please enter a unique and non-empty to do.');
                             }
-                        }}>Create Todo</button>
+                        }}>
+                        <i className="fas fa-edit" title="Create new to-do"></i>
+                    </button>
                 </div>
             </div>
         </div>
