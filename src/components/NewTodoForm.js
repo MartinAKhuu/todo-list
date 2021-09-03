@@ -7,7 +7,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
 
     return (
         <div className="todo-form">
-            <div className="row no-gutters">
+            <div className="row g-0">
                 <div className="col-10">
                     <input
                         id="todo-input"
