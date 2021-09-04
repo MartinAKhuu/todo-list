@@ -8,7 +8,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
     return (
         <div className="todo-form">
             <div className="row g-0">
-                <div className="col-10">
+                <div className="col-sm-10">
                     <input
                         id="todo-input"
                         className="h3"
@@ -17,7 +17,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
                         value={inputValue}
                         onChange={e => setInputValue(e.target.value)} />
                 </div>
-                <div className="col-2">
+                <div className="col-sm-2">
                     <button id="todo-submit"
                         onClick={() => {
                             const isDuplicateText =
@@ -29,7 +29,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
                             } else {
                                 alert('Please enter a unique and non-empty to do.');
                             }
-                        }}>
+                        }} className="p-2">
                         <i className="fas fa-edit" title="Create new to-do"></i>
                     </button>
                 </div>

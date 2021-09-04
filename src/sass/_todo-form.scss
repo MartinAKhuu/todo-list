@@ -5,9 +5,13 @@
         height: 100%;
         width: 100%;
         border: none;
-        padding: 1rem 0;
-        padding-left: 4rem;
+        padding: 1rem;
         margin-bottom: 0;
+
+        @media screen and (min-width: 576px) {
+            padding-left: 4rem;
+            padding-right: 0;
+        }
     }
 
     #todo-submit {

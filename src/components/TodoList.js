@@ -6,8 +6,8 @@ import { removeTodo, markCompleted } from '../redux/actions';
 import matchHeightItems from './utility/matchHeightItems';
 
 const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed }) => (
-    <>
-        <div className="lines match-height-items" />
+    <div className="container-fluid">
+        <div className="lines match-height-items d-none d-sm-block" />
         <div className="match-height-items">
             <NewTodoForm />
             <div className="todo-list">
@@ -19,7 +19,7 @@ const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed }) => (
             </div>
         </div>
         {matchHeightItems()}
-    </>
+    </div>
 );
 
 const mapStateToProps = state => ({
